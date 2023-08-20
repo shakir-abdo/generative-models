@@ -269,7 +269,7 @@ if __name__ == "__main__":
 
     save_locally, save_path = init_save_locally(os.path.join(SAVE_PATH, version))
 
-    state = init_st(version_dict, load_filter=True)
+    state = init_st(version_dict, load_filter=False)
     if state["msg"]:
         st.info(state["msg"])
     model = state["model"]

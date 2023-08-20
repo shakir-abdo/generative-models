@@ -72,7 +72,7 @@ embed_watemark = WatermarkEmbedder(WATERMARK_BITS)
 
 
 @st.cache_resource()
-def init_st(version_dict, load_ckpt=True, load_filter=True):
+def init_st(version_dict, load_ckpt=True, load_filter=False):
     state = dict()
     if not "model" in state:
         config = version_dict["config"]
